@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesus, Maria e Você — Devocional Católico Diário</title>
+<meta name="description" content="Jesus, Maria e Você — Devocional católico diário para o ano inteiro. 366 meditações de fé, com um versículo, uma reflexão e uma oração para cada dia. Por Dr. Eduardo D'Angelo Mimessi.">
+<meta name="author" content="Dr. Eduardo D'Angelo Mimessi">
+<meta name="theme-color" content="#1b3a63">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Jesus, Maria e Você — Devocional Católico Diário">
+<meta property="og:description" content="Um versículo, uma meditação e uma oração para viver cada dia com Cristo, na companhia de Maria.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='27' font-size='26'%3E%F0%9F%8C%B9%3C/text%3E%3C/svg%3E">
+<style>
+  :root{
+    --paper:#f5f1e8; --paper-2:#ece5d6; --card:#fffdf8;
+    --ink:#1b3a63; --ink-soft:#4a5568; --ink-faint:#7b7565;
+    --gold:#b8943f; --gold-deep:#9c7a2e; --marian:#2a5a9e; --rose:#a23b57; --sepia:#8a6d3b;
+    --line:#e2dccb; --line-strong:#d3cbb4;
+    --shadow:0 4px 24px rgba(27,58,99,.08); --shadow-lg:0 18px 50px rgba(27,58,99,.16);
+    --serif:"Iowan Old Style","Palatino Linotype","Book Antiqua",Palatino,"Georgia",serif;
+    --sans:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --maxread:38rem;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --paper:#0d1a2e; --paper-2:#0a1524; --card:#14273f;
+      --ink:#efe6d3; --ink-soft:#c3bda9; --ink-faint:#8f907f;
+      --gold:#d8b45f; --gold-deep:#e6c877; --marian:#6ea3e6; --rose:#e089a0; --sepia:#cbab6f;
+      --line:#24374f; --line-strong:#324862;
+      --shadow:0 4px 24px rgba(0,0,0,.3); --shadow-lg:0 18px 50px rgba(0,0,0,.5);
+    }
+  }
+  :root[data-theme="light"]{
+    --paper:#f5f1e8; --paper-2:#ece5d6; --card:#fffdf8;
+    --ink:#1b3a63; --ink-soft:#4a5568; --ink-faint:#7b7565;
+    --gold:#b8943f; --gold-deep:#9c7a2e; --marian:#2a5a9e; --rose:#a23b57; --sepia:#8a6d3b;
+    --line:#e2dccb; --line-strong:#d3cbb4;
+    --shadow:0 4px 24px rgba(27,58,99,.08); --shadow-lg:0 18px 50px rgba(27,58,99,.16);
+  }
+  :root[data-theme="dark"]{
+    --paper:#0d1a2e; --paper-2:#0a1524; --card:#14273f;
+    --ink:#efe6d3; --ink-soft:#c3bda9; --ink-faint:#8f907f;
+    --gold:#d8b45f; --gold-deep:#e6c877; --marian:#6ea3e6; --rose:#e089a0; --sepia:#cbab6f;
+    --line:#24374f; --line-strong:#324862;
+    --shadow:0 4px 24px rgba(0,0,0,.3); --shadow-lg:0 18px 50px rgba(0,0,0,.5);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);
+    line-height:1.65;-webkit-font-smoothing:antialiased;}
+  ::selection{background:rgba(184,148,63,.28)}
+  a{color:inherit}
+  .wrap{max-width:60rem;margin:0 auto;padding:0 20px}
+
+  .topbar{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--paper) 88%,transparent);
+    backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .topbar-in{max-width:60rem;margin:0 auto;padding:12px 20px;display:flex;align-items:center;
+    justify-content:space-between;gap:16px}
+  .brand{display:flex;align-items:center;gap:11px;min-width:0}
+  .brand .cup{width:30px;height:30px;flex:none}
+  .brand b{font-family:var(--serif);font-weight:600;font-size:1.02rem;letter-spacing:.01em;white-space:nowrap}
+  .brand small{display:block;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint)}
+  .topbar-actions{display:flex;align-items:center;gap:8px}
+  .icon-btn{background:transparent;border:1px solid var(--line-strong);color:var(--ink-soft);
+    width:38px;height:38px;border-radius:50%;cursor:pointer;display:grid;place-items:center;
+    font-size:1rem;transition:.18s}
+  .icon-btn:hover{border-color:var(--gold);color:var(--gold)}
+  .btn{font-family:var(--sans);font-size:.82rem;font-weight:600;border-radius:40px;cursor:pointer;
+    padding:9px 18px;border:1px solid transparent;transition:.18s;white-space:nowrap}
+  .btn-gold{background:var(--gold);color:#1c1405}
+  .btn-gold:hover{background:var(--gold-deep);color:#fff}
+  .btn-ghost{background:transparent;border-color:var(--line-strong);color:var(--ink-soft)}
+  .btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
+
+  .hero{text-align:center;padding:46px 20px 26px}
+  .kicker{font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-deep);
+    font-weight:700;margin-bottom:14px}
+  .hero h1{font-family:var(--serif);font-weight:600;font-size:clamp(2.1rem,5.5vw,3.2rem);
+    line-height:1.08;margin:0 0 12px;text-wrap:balance;letter-spacing:-.01em}
+  .hero h1 em{font-style:italic;color:var(--gold-deep)}
+  .hero-sub{max-width:34rem;margin:0 auto;color:var(--ink-soft);font-size:1.02rem}
+  .hero-meta{margin-top:18px;font-size:.78rem;color:var(--ink-faint);letter-spacing:.03em}
+  .hero-meta span{margin:0 9px}
+  .rule{width:52px;height:1px;background:var(--line-strong);margin:22px auto 0;position:relative}
+  .rule::after{content:"";position:absolute;top:-3px;left:50%;transform:translateX(-50%) rotate(45deg);
+    width:6px;height:6px;background:var(--gold)}
+
+  .monthnav{position:sticky;top:60px;z-index:40;background:color-mix(in srgb,var(--paper) 90%,transparent);
+    backdrop-filter:blur(8px);border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:8px}
+  .monthnav-in{max-width:60rem;margin:0 auto;padding:0 12px;display:flex;gap:4px;overflow-x:auto;
+    scrollbar-width:none}
+  .monthnav-in::-webkit-scrollbar{display:none}
+  .mtab{flex:none;background:transparent;border:none;cursor:pointer;font-family:var(--sans);
+    font-size:.85rem;font-weight:600;color:var(--ink-faint);padding:13px 16px;position:relative;transition:.15s}
+  .mtab:hover{color:var(--ink)}
+  .mtab[aria-selected="true"]{color:var(--gold-deep)}
+  .mtab[aria-selected="true"]::after{content:"";position:absolute;left:12px;right:12px;bottom:-1px;
+    height:2px;background:var(--gold);border-radius:2px}
+
+  .daystrip-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;
+    margin:26px 0 12px;flex-wrap:wrap}
+  .daystrip-head .theme{font-family:var(--serif);font-style:italic;font-size:1.12rem;color:var(--ink)}
+  .daystrip-head .count{font-size:.74rem;color:var(--ink-faint);letter-spacing:.05em}
+  .daystrip{display:grid;grid-template-columns:repeat(auto-fill,minmax(46px,1fr));gap:7px;
+    padding-bottom:6px}
+  .daychip{aspect-ratio:1;border:1px solid var(--line-strong);background:var(--card);border-radius:11px;
+    cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;
+    font-family:var(--sans);color:var(--ink-soft);transition:.15s;padding:2px;line-height:1;position:relative}
+  .daychip .n{font-weight:700;font-size:.95rem;color:var(--ink)}
+  .daychip .g{font-size:.72rem;margin-top:2px}
+  .daychip:hover{border-color:var(--gold);transform:translateY(-1px);box-shadow:var(--shadow)}
+  .daychip[aria-current="true"]{background:var(--gold);border-color:var(--gold)}
+  .daychip[aria-current="true"] .n{color:#1c1405}
+  .daychip.read::after{content:"";position:absolute;top:5px;right:5px;width:5px;height:5px;
+    border-radius:50%;background:var(--marian)}
+
+  .reader{max-width:var(--maxread);margin:30px auto 0;padding:0 4px}
+  .r-eyebrow{display:flex;align-items:center;gap:10px;justify-content:center;margin-bottom:18px}
+  .badge{display:inline-flex;align-items:center;gap:7px;font-size:.7rem;font-weight:700;
+    letter-spacing:.12em;text-transform:uppercase;padding:6px 13px;border-radius:40px;
+    border:1px solid;background:transparent}
+  .r-week{text-align:center;font-size:.76rem;letter-spacing:.06em;color:var(--ink-faint);margin-bottom:6px}
+  .r-title{font-family:var(--serif);font-weight:600;text-align:center;font-size:clamp(1.7rem,4.4vw,2.4rem);
+    line-height:1.14;margin:6px 0 26px;text-wrap:balance}
+  .verse{border-top:1px solid var(--line-strong);border-bottom:1px solid var(--line-strong);
+    padding:22px 4px;margin:0 0 30px;text-align:center;position:relative}
+  .verse::before{content:"";position:absolute;top:-4px;left:50%;transform:translateX(-50%) rotate(45deg);
+    width:7px;height:7px;background:var(--gold)}
+  .verse .vt{font-family:var(--serif);font-style:italic;font-size:1.24rem;line-height:1.55;color:var(--ink)}
+  .verse .vr{margin-top:12px;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--gold-deep);font-weight:700}
+  .verse.ref-only .vr{margin-top:0}
+  .prose{font-family:var(--serif);font-size:1.16rem;line-height:1.72;color:var(--ink)}
+  .prose p{margin:0 0 1.1em}
+  .section-block{margin-top:30px;border-left:2px solid var(--line-strong);padding-left:20px}
+  .sb-label{font-family:var(--sans);font-size:.68rem;font-weight:700;letter-spacing:.16em;
+    text-transform:uppercase;color:var(--sepia);margin-bottom:8px;display:flex;align-items:center;gap:8px}
+  .section-block.prayer{border-left-color:var(--gold)}
+  .section-block.prayer .sb-label{color:var(--gold-deep)}
+  .section-block p{font-family:var(--serif);font-size:1.08rem;line-height:1.68;color:var(--ink-soft);margin:0}
+  .section-block.prayer p{font-style:italic;color:var(--ink)}
+  .anchor{margin:38px 0 8px;background:var(--paper-2);border:1px solid var(--line);border-radius:16px;
+    padding:24px 26px;text-align:center}
+  .anchor .al{font-size:.66rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--gold-deep);margin-bottom:10px}
+  .anchor .aq{font-family:var(--serif);font-style:italic;font-size:1.14rem;line-height:1.5;color:var(--ink)}
+
+  .pager{max-width:var(--maxread);margin:36px auto 0;display:flex;gap:12px;justify-content:space-between}
+  .pgbtn{flex:1;background:var(--card);border:1px solid var(--line-strong);border-radius:14px;
+    padding:14px 16px;cursor:pointer;text-align:left;transition:.16s;min-width:0;font-family:var(--sans)}
+  .pgbtn:hover{border-color:var(--gold);box-shadow:var(--shadow)}
+  .pgbtn:disabled{opacity:.38;cursor:default;box-shadow:none;border-color:var(--line)}
+  .pgbtn .dir{font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);font-weight:700}
+  .pgbtn .lbl{font-family:var(--serif);font-size:.98rem;color:var(--ink);margin-top:3px;
+    white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .pgbtn.next{text-align:right}
+
+  footer{max-width:var(--maxread);margin:56px auto 0;padding:26px 4px 60px;border-top:1px solid var(--line);
+    text-align:center;color:var(--ink-faint);font-size:.78rem;line-height:1.7}
+  footer b{color:var(--ink-soft);font-family:var(--serif);font-weight:600}
+
+  .toast{position:fixed;left:50%;bottom:26px;transform:translateX(-50%) translateY(20px);opacity:0;
+    background:var(--ink);color:var(--paper);padding:11px 20px;border-radius:40px;font-size:.82rem;
+    font-weight:600;box-shadow:var(--shadow-lg);transition:.25s;pointer-events:none;z-index:80}
+  .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+  @media (max-width:560px){
+    .brand small{display:none}
+    .hero{padding-top:34px}
+    .reader{padding:0}
+    .daystrip{grid-template-columns:repeat(auto-fill,minmax(42px,1fr))}
+  }
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-in">
+    <div class="brand">
+      <svg class="cup" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <path d="M16 4v9M11.5 8.5h9" stroke="var(--gold)" stroke-width="1.7" stroke-linecap="round"/>
+        <path d="M16 13c-3.6 0-6.5 2.6-6.5 6.2 0 4.4 6.5 8.8 6.5 8.8s6.5-4.4 6.5-8.8C22.5 15.6 19.6 13 16 13z"
+          stroke="var(--rose)" stroke-width="1.5" fill="none"/>
+        <circle cx="16" cy="19" r="2.2" fill="var(--rose)" opacity=".55"/>
+      </svg>
+      <div>
+        <b>Jesus, Maria e Você</b>
+        <small>Devocional Católico</small>
+      </div>
+    </div>
+    <div class="topbar-actions">
+      <button class="btn btn-gold" id="todayBtn">Ler o dia de hoje</button>
+      <button class="icon-btn" id="themeBtn" aria-label="Alternar tema">◐</button>
+    </div>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="kicker">Devocional Diário · Espiritualidade Católica</div>
+  <h1>Jesus, Maria <em>e Você</em></h1>
+  <p class="hero-sub">Um versículo, uma meditação e uma oração para viver cada dia com Cristo, na companhia de Maria.</p>
+  <div class="hero-meta">
+    <span>Dr. Eduardo D'Angelo Mimessi</span>·<span id="totalMeta">366 dias</span>
+  </div>
+  <div class="rule"></div>
+</header>
+
+<nav class="monthnav"><div class="monthnav-in" id="monthNav" role="tablist"></div></nav>
+
+<main class="wrap">
+  <div class="daystrip-head">
+    <div class="theme" id="monthTheme"></div>
+    <div class="count" id="monthCount"></div>
+  </div>
+  <div class="daystrip" id="dayStrip"></div>
+
+  <article class="reader" id="reader"></article>
+
+  <div class="pager">
+    <button class="pgbtn prev" id="prevBtn"><div class="dir">← Anterior</div><div class="lbl" id="prevLbl"></div></button>
+    <button class="pgbtn next" id="nextBtn"><div class="dir">Próximo →</div><div class="lbl" id="nextLbl"></div></button>
+  </div>
+
+  <footer>
+    <b>Jesus, Maria e Você — Devocional Católico</b><br>
+    Dr. Eduardo D'Angelo Mimessi · Devocional diário · 366 meditações<br>
+    <span id="footNote"></span>
+  </footer>
+</main>
+
+<div class="toast" id="toast"></div>
+
+<script src="assets/dias.js"></script>
+<script>
+const TIPOS = {
+  palavra:{lbl:"A Palavra", g:"📖", c:"var(--gold-deep)"},
+  evangelho:{lbl:"Evangelho", g:"✝", c:"var(--marian)"},
+  santo:{lbl:"Testemunho dos Santos", g:"✧", c:"var(--gold-deep)"},
+  maria:{lbl:"Com Maria", g:"🌹", c:"var(--rose)"},
+  sacramento:{lbl:"Vida Sacramental", g:"✚", c:"var(--marian)"},
+  oracao:{lbl:"Escola de Oração", g:"✦", c:"var(--marian)"},
+  reflexao:{lbl:"Reflexão", g:"❖", c:"var(--sepia)"},
+  vivencia:{lbl:"Vivência", g:"❀", c:"var(--sepia)"},
+  descanso:{lbl:"Dia do Senhor", g:"☀", c:"var(--gold-deep)"},
+  sintese:{lbl:"Síntese", g:"◈", c:"var(--gold-deep)"},
+  envio:{lbl:"Envio", g:"➤", c:"var(--gold-deep)"},
+  bissexto:{lbl:"Dia Extra", g:"✵", c:"var(--gold-deep)"}
+};
+const MESES = window.MESES, DIAS = window.DIAS;
+
+const $ = s => document.querySelector(s);
+const reader = $('#reader'), monthNav = $('#monthNav'), dayStrip = $('#dayStrip');
+const mesesComDados = [...new Set(DIAS.map(d=>d.m))].sort((a,b)=>a-b);
+let mesAtivo = mesesComDados[0], idx = 0;
+const READKEY='jmv_read', LASTKEY='jmv_last';
+const lidos = new Set(JSON.parse(localStorage.getItem(READKEY)||'[]'));
+
+$('#totalMeta').textContent = DIAS.length + ' meditações';
+$('#footNote').textContent = 'Um ano completo de meditações — Janeiro a Dezembro.';
+
+function keyOf(day){return day.m+'-'+day.d;}
+
+function buildMonthNav(){
+  monthNav.innerHTML='';
+  mesesComDados.forEach(m=>{
+    const b=document.createElement('button');
+    b.className='mtab';b.textContent=MESES[m].nome;b.setAttribute('role','tab');
+    b.setAttribute('aria-selected', m===mesAtivo);
+    b.onclick=()=>{const first=DIAS.findIndex(d=>d.m===m); go(first);};
+    monthNav.appendChild(b);
+  });
+  const cur=monthNav.querySelector('[aria-selected="true"]');
+  if(cur) cur.scrollIntoView({inline:'center',block:'nearest'});
+}
+
+function buildDayStrip(){
+  const info=MESES[mesAtivo];
+  $('#monthTheme').textContent=info.tema;
+  const daysThis=DIAS.filter(d=>d.m===mesAtivo);
+  $('#monthCount').textContent=daysThis.length+' dias';
+  dayStrip.innerHTML='';
+  daysThis.forEach(day=>{
+    const gi=DIAS.indexOf(day);
+    const c=document.createElement('button');
+    c.className='daychip'+(lidos.has(keyOf(day))?' read':'');
+    c.setAttribute('aria-current', gi===idx);
+    const t=TIPOS[day.tipo]||TIPOS.palavra;
+    c.innerHTML='<span class="n">'+day.d+'</span><span class="g">'+t.g+'</span>';
+    c.title=day.tit;
+    c.onclick=()=>go(gi);
+    dayStrip.appendChild(c);
+  });
+}
+
+function esc(s){return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+
+function render(){
+  const day=DIAS[idx], info=MESES[day.m], t=TIPOS[day.tipo]||TIPOS.palavra;
+  mesAtivo=day.m;
+  const verseBlock = day.ref ? (
+    '<div class="verse'+(day.txt?'':' ref-only')+'">'+
+    (day.txt?'<div class="vt">“'+esc(day.txt)+'”</div>':'')+
+    '<div class="vr">'+esc(day.ref)+'</div></div>') : '';
+  reader.innerHTML =
+    '<div class="r-eyebrow"><span class="badge" style="color:'+t.c+';border-color:'+t.c+'">'+
+      t.g+' '+t.lbl+'</span></div>'+
+    '<div class="r-week">'+esc(info.nome)+(day.st?' · '+esc(day.st):'')+'</div>'+
+    '<h1 class="r-title">'+esc(day.tit)+'</h1>'+
+    verseBlock+
+    '<div class="prose"><p>'+esc(day.med)+'</p></div>'+
+    '<div class="section-block"><div class="sb-label">❖ Para viver hoje</div><p>'+esc(day.pra)+'</p></div>'+
+    '<div class="section-block prayer"><div class="sb-label">✦ Oração</div><p>'+esc(day.ora)+'</p></div>'+
+    '<div class="anchor"><div class="al">Frase-âncora do mês</div><div class="aq">“'+esc(info.ancora)+'”</div></div>';
+
+  const prev=DIAS[idx-1], next=DIAS[idx+1];
+  $('#prevBtn').disabled=!prev; $('#nextBtn').disabled=!next;
+  $('#prevLbl').textContent=prev?(MESES[prev.m].nome+' '+prev.d):'—';
+  $('#nextLbl').textContent=next?(MESES[next.m].nome+' '+next.d):'—';
+
+  lidos.add(keyOf(day));
+  localStorage.setItem(READKEY, JSON.stringify([...lidos]));
+  localStorage.setItem(LASTKEY, idx);
+
+  buildMonthNav(); buildDayStrip();
+}
+
+function go(i, scroll=true){
+  idx=Math.max(0,Math.min(DIAS.length-1,i));
+  render();
+  if(scroll) reader.scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+$('#prevBtn').onclick=()=>go(idx-1);
+$('#nextBtn').onclick=()=>go(idx+1);
+
+function toast(msg){const t=$('#toast');t.textContent=msg;t.classList.add('show');
+  clearTimeout(t._t);t._t=setTimeout(()=>t.classList.remove('show'),2600);}
+
+$('#todayBtn').onclick=()=>{
+  const now=new Date(), m=now.getMonth()+1, d=now.getDate();
+  const found=DIAS.findIndex(x=>x.m===m && x.d===d);
+  if(found>=0){go(found);toast('Meditação de hoje 🌹');}
+  else{ go(0); toast('Retomando o devocional.'); }
+};
+
+const themeBtn=$('#themeBtn');
+themeBtn.onclick=()=>{
+  const cur=document.documentElement.getAttribute('data-theme')
+    || (matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');
+  document.documentElement.setAttribute('data-theme', cur==='dark'?'light':'dark');
+};
+
+addEventListener('keydown',e=>{
+  if(e.target.tagName==='INPUT') return;
+  if(e.key==='ArrowRight')go(idx+1);
+  if(e.key==='ArrowLeft')go(idx-1);
+});
+
+function indiceDeHoje(){
+  const now=new Date(), m=now.getMonth()+1, d=now.getDate();
+  let i=DIAS.findIndex(x=>x.m===m && x.d===d);
+  if(i<0) i=DIAS.findIndex(x=>x.m===m);
+  return i<0?0:i;
+}
+go(indiceDeHoje(), false);
+</script>
+</body>
+</html>
