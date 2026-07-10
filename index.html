@@ -158,6 +158,8 @@
   footer{max-width:var(--maxread);margin:56px auto 0;padding:26px 4px 60px;border-top:1px solid var(--line);
     text-align:center;color:var(--ink-faint);font-size:.78rem;line-height:1.7}
   footer b{color:var(--ink-soft);font-family:var(--serif);font-weight:600}
+  .visits{margin-top:12px;font-size:.74rem;letter-spacing:.05em;color:var(--ink-faint)}
+  .visits b{color:var(--gold-deep);font-family:var(--sans);font-weight:700}
 
   .toast{position:fixed;left:50%;bottom:26px;transform:translateX(-50%) translateY(20px);opacity:0;
     background:var(--ink);color:var(--paper);padding:11px 20px;border-radius:40px;font-size:.82rem;
@@ -226,12 +228,31 @@
     <b>Jesus, Maria e Você — Devocional Católico</b><br>
     Dr. Eduardo D'Angelo Mimessi · Devocional diário · 366 meditações<br>
     <span id="footNote"></span>
+    <div class="visits" id="visitBox" hidden></div>
   </footer>
 </main>
 
 <div class="toast" id="toast"></div>
 
 <script src="assets/dias.js"></script>
+<script>
+// Contador de visitas (serviço gratuito Abacus). Falha em silêncio se estiver fora do ar.
+(function(){
+  var ns='jesusmariaevoce-com-br', key='visitas';
+  var box=document.getElementById('visitBox');
+  if(!box) return;
+  var seen=sessionStorage.getItem('jmv_visit');
+  var url='https://abacus.jasoncameron.dev/'+(seen?'get':'hit')+'/'+ns+'/'+key;
+  fetch(url).then(function(r){return r.json();}).then(function(d){
+    if(!seen) sessionStorage.setItem('jmv_visit','1');
+    if(d && typeof d.value==='number'){
+      var n=d.value;
+      box.innerHTML='🌹 <b>'+n.toLocaleString('pt-BR')+'</b> '+(n===1?'visita':'visitas');
+      box.hidden=false;
+    }
+  }).catch(function(){});
+})();
+</script>
 <script>
 const TIPOS = {
   palavra:{lbl:"A Palavra", g:"📖", c:"var(--gold-deep)"},
