@@ -7,6 +7,12 @@
 <meta name="description" content="Jesus, Maria e Você — Devocional católico diário para o ano inteiro. 366 meditações de fé, com um versículo, uma reflexão e uma oração para cada dia. Por Dr. Eduardo D'Angelo Mimessi.">
 <meta name="author" content="Dr. Eduardo D'Angelo Mimessi">
 <meta name="theme-color" content="#1b3a63">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Jesus, Maria e Você">
+<link rel="apple-touch-icon" href="icon-180.png">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Jesus, Maria e Você — Devocional Católico Diário">
 <meta property="og:description" content="Um versículo, uma meditação e uma oração para viver cada dia com Cristo, na companhia de Maria.">
@@ -385,6 +391,12 @@ function indiceDeHoje(){
   return i<0?0:i;
 }
 go(indiceDeHoje(), false);
+</script>
+<script>
+// Registra o service worker (torna o site instalável e disponível offline)
+if('serviceWorker' in navigator){
+  addEventListener('load', function(){ navigator.serviceWorker.register('sw.js').catch(function(){}); });
+}
 </script>
 </body>
 </html>
