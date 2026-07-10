@@ -1,5 +1,5 @@
 /* Jesus, Maria e Você — service worker (offline + app) */
-const CACHE = 'jesus-maria-e-voce-v2';
+const CACHE = 'jesus-maria-e-voce-v3';
 const ASSETS = [
   './',
   './index.html',

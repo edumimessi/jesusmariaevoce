@@ -390,6 +390,36 @@ function indiceDeHoje(){
 }
 go(indiceDeHoje(), false);
 </script>
+
+<!-- GoatCounter — estatísticas privadas (sem cookies). Conta cada dia lido. -->
+<script>window.goatcounter = { no_onload: true };</script>
+<script data-goatcounter="https://jesusmariaevoce.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+<script>
+(function(){
+  function gcCount(i){
+    if(!(window.goatcounter && window.goatcounter.count && window.DIAS)) return;
+    var idx = Math.max(0, Math.min(window.DIAS.length-1, i|0));
+    var d = window.DIAS[idx];
+    if(d) window.goatcounter.count({ path:'/dia/'+d.m+'-'+d.d, title:d.tit });
+  }
+  function whenReady(cb, n){
+    n = (n==null)?40:n;
+    if(window.goatcounter && window.goatcounter.count) return cb();
+    if(n<=0) return;
+    setTimeout(function(){ whenReady(cb, n-1); }, 150);
+  }
+  addEventListener('load', function(){
+    if(typeof window.go === 'function' && !window.__gcWrap){
+      window.__gcWrap = true;
+      var _go = window.go;
+      window.go = function(i){ var r=_go.apply(this, arguments); gcCount(i); return r; };
+    }
+    if(typeof window.indiceDeHoje === 'function') whenReady(function(){ gcCount(window.indiceDeHoje()); });
+  });
+})();
+</script>
+
 <script>
 // Registra o service worker (torna o site instalável e disponível offline)
 if('serviceWorker' in navigator){
